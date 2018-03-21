@@ -1,0 +1,8 @@
+// get all parameter request
+ Map<String, String[]> parameters = request.getParameterMap();
+ for(String key : parameters.keySet()) {
+  System.out.println(key);
+  String[] vals = parameters.get(key);
+  for(String val : vals)
+	System.out.println(" -> " + val);
+}
